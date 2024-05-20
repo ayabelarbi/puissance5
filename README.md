@@ -45,6 +45,9 @@
 
 ### Diagramme de classes
 
+![image](https://github.com/ayabelarbi/puissance5/assets/157014423/f83aa266-9078-4ad4-89d1-f920f78e5ec7)
+
+
 ## Lancer le jeu "Puissance 5"
 
 Pour démarrer le jeu, compilez et exécutez le fichier principal = > main.cpp
