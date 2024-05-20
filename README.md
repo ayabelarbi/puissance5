@@ -45,7 +45,7 @@
 
 ### Diagramme de classes
 
-![image](https://github.com/ayabelarbi/puissance5/assets/157014423/f83aa266-9078-4ad4-89d1-f920f78e5ec7)
+![classes-removebg-preview](https://github.com/ayabelarbi/puissance5/assets/157014423/ca900117-3f96-4fd5-a732-7ee2ccf8c8cb)
 
 
 ## Lancer le jeu "Puissance 5"
