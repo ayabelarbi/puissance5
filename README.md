@@ -6,36 +6,49 @@
 
 #### Classe Jeu
 **Attributs :**
-- `taille_grille` : La taille de la grille (nombre de lignes et de colonnes).
-- `grille` : Une matrice représentant l'état de la grille (pions vides, pions rouges, pions jaunes).
-- `joueur_actuel` : Le joueur qui doit jouer (1 pour rouge, 2 pour jaune).
-- `gagnant` : Le joueur gagnant (0 si pas encore de gagnant).
+- plateau : Plateau
+- joueurs : vector<Joueur>
+- joueurCourant : size_t
+- modeIA : bool
 
 **Méthodes :**
-- `initialiser()` : Initialise la grille avec des pions vides.
-- `jouer(pion, colonne)` : Joue un pion dans la colonne spécifiée.
-- `verifier_victoire()` : Vérifie si un joueur a gagné.
-- `changer_joueur()` : Passe au joueur suivant.
-- `afficher_grille()` : Affiche l'état de la grille à l'écran.
-
-#### Classe Pion
+- Jeu(size_t nbJoueurs, int nbLignes, int nbColonnes, bool modeIA = false)
+- jouerCoup(int colonne) : bool
+- getPlateau() : Plateau&
+- getJoueurCourant() const : const Joueur&
+- estIAEnCours() const : bool
+- choisirCoupIA() const : int
+- passerAuJoueurSuivant() : void
+  
+#### Classe Plateau
 **Attributs :**
-- `couleur` : La couleur du pion (rouge ou jaune).
+- grille : vector<vector<char>>
+- nbLignes : int
+- nbColonnes : int
 
 **Méthodes :**
-- `get_couleur()` : Renvoie la couleur du pion.
-
-### Classes secondaires
-
-#### Classe Grille
-Représente la grille de jeu. Contient des méthodes pour accéder aux pions et les modifier.
+- Plateau(int nbLignes, int nbColonnes)
+- placerPion(int colonne, const Joueur& joueur) : bool
+- estPleine() : bool
+- estValideCoup(int colonne) : bool
+- verifierAlignement(const Joueur& joueur) : bool
+- afficherPlateau() : void
+- getNbColonnes() : int
 
 #### Classe Joueur
-Représente un joueur humain ou une IA. Contient des méthodes pour effectuer un choix de coup.
+**Attributs :**
+- nom : string
+- couleur : char
 
-#### Classe Interface 
-- `afficherPlateau(plateau: Plateau)`
-- `demanderCoup(joueur: Joueur): int`
-- `afficherGagnant(joueur: Joueur)`
+**Méthodes :**
+- Joueur(const string& nom, char couleur)
+- getNom() : string
+- getCouleur() : char
 
-## Diagramme de classes
+### Diagramme de classes
+
+## Lancer le jeu "Puissance 5"
+
+Pour démarrer le jeu, compilez et exécutez le fichier principal = > main.cpp
+Vous serez invité à entrer le nombre de lignes et de colonnes pour la grille, ainsi que le mode de jeu (1 pour 1vsIA ou 0 pour 1vs1).
+
