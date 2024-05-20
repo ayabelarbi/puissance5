@@ -45,12 +45,10 @@
 
 ### Diagramme de classes
 
-![classes-removebg-preview](https://github.com/ayabelarbi/puissance5/assets/157014423/ca900117-3f96-4fd5-a732-7ee2ccf8c8cb)
-
+![image](https://github.com/ayabelarbi/puissance5/assets/157014423/d384d80f-748d-46b1-80c9-85f7b6bdde0b)
 
 ## Lancer le jeu "Puissance 5"
 
 Pour démarrer le jeu, compilez et exécutez le fichier principal = > main.cpp
 
 Vous serez invité à entrer le nombre de lignes et de colonnes pour la grille, ainsi que le mode de jeu (1 pour 1vsIA ou 0 pour 1vs1).
-
