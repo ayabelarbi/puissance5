@@ -2,9 +2,7 @@
 
 ## Les classes et le diagramme de classes
 
-### Classes principales
-
-#### Classe Jeu
+### Classe Jeu
 **Attributs :**
 - plateau : Plateau
 - joueurs : vector<Joueur>
@@ -20,7 +18,7 @@
 - choisirCoupIA() const : int
 - passerAuJoueurSuivant() : void
   
-#### Classe Plateau
+### Classe Plateau
 **Attributs :**
 - grille : vector<vector<char>>
 - nbLignes : int
@@ -35,7 +33,7 @@
 - afficherPlateau() : void
 - getNbColonnes() : int
 
-#### Classe Joueur
+### Classe Joueur
 **Attributs :**
 - nom : string
 - couleur : char
@@ -50,5 +48,6 @@
 ## Lancer le jeu "Puissance 5"
 
 Pour démarrer le jeu, compilez et exécutez le fichier principal = > main.cpp
+
 Vous serez invité à entrer le nombre de lignes et de colonnes pour la grille, ainsi que le mode de jeu (1 pour 1vsIA ou 0 pour 1vs1).
 
